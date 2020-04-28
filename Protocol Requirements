@@ -1,0 +1,10 @@
+#The PCR Thermal Cycler should be capable of performing two PCR amplification protocols at the same time. The specifications for each amplification protocol are as follows:
+
+Start. The amplification protocol starts at ambient temperature.
+Initial Denaturation. The denaturation setpoint will be a value in the range from 92-98 deg C and for a period of 60-120 seconds determined by the user. The same temperature setpoint will apply to all subsequent denaturation cycles.
+PCR Thermal cycles. The user should be able to specify up to 30 PCR cycles. (To save time, you only need to test performance for only 3 cycles.) Each cycle consists of
+Annealing. A user determined temperature between 50 deg C and 65 deg C for user determined period from 30 to 120 seconds.
+Extension. A user determined temperature of 68-72 deg C for a period from 30-180 seconds.
+Denaturation. At the same temperature as the initial denaturation for a user determined period of 30-120 seconds.
+Final Extension. The protocol finishes with a final extension step that can be user determined from 30-300 seconds.
+Finish. Following the final extension, the temperature should return to ambient temperature and present a message to the user indicating completion.
