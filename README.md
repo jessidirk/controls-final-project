@@ -1,13 +1,13 @@
-## Controls Final Project by Ana Diederich and Jessi Dirksen
+# Controls Final Project by Ana Diederich and Jessi Dirksen
 
-# Protocol UI
+## Protocol UI
 
-# Runtime UI
+## Runtime UI
 
-# Review UI
+## Review UI
 
 
-# Contributions:
+## Contributions:
 
 Jessi: 
 
