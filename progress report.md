@@ -1,6 +1,0 @@
-#Contributions:
-
-Jessi:
-
-Ana: 
--Created 
