@@ -36,11 +36,9 @@ Control implementation uses trim PID control, and provides two methods for this 
 ## Review UI
 Retrieves data from the Runtime UI notebook.
 
-Displays the data recorded from both control algorithms. 
-
-  This allows the user to evaluate which control is appropriate for their use. 
+Displays the data recorded from both control algorithms, allowing the user to evaluate which control is appropriate for their use. 
   
-  Our simulation trials found that the cvxpy and velocity PID control reached our desired temperatures more efficiently and accurately.
+Simulation trials found that the cvxpy and velocity PID control reached the desired temperatures more efficiently and accurately.
 
 ## Contributions:
 
