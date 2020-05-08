@@ -14,11 +14,23 @@ User settings include:
 * Final extension temperature and duration
 
 ## Runtime UI
-Selects and views saved protocol for heaters. Creates control algorithms which allow for the PCR to be run in a cell below. Control implementation uses trim PID control, and provides two methods for this PID control. The first method uses feedforward control goverened by scipy.linprog and a position PID function. The second method uses feedforward control goverened by cvxpy and a velocity PID function. Both controllers were tuned for optimal control at P=1, I=0, D=0.05 using a simulation (hardware malfunction prevented physical testing.) A start and stop button is created to commence PCR and displays results below.
+Selects and views saved protocol for heaters. 
+Creates control algorithms which allow for the PCR to be run in a cell below. 
+Control implementation uses trim PID control, and provides two methods for this PID control.
+  Method I: uses feedforward control governed by scipy.linprog and a position PID function. 
+  Method II: uses feedforward control governed by cvxpy and a velocity PID function. 
+  Both controllers were tuned for optimal control at P=1, I=0, D=0.05 using a simulation (hardware malfunction prevented physical testing.) 
+  Start and stop buttons allow user control of the PCR runtime
+  Results are graphed as the interface runs, including:
+  * Temperature setpoint
+  * Actual temperature
+  * Power of Heaters I and II
 
 ## Review UI
-Retrieves data from the Runtime UI notebook and displays the data recorded from both control algorithms. This allows the user to evaluate which control is appropriate for their use. Our simulation trials found that the cvxpy and velocity PID control reached our desired temperatures more efficiently and accurately.
-
+Retrieves data from the Runtime UI notebook.
+Displays the data recorded from both control algorithms. 
+  This allows the user to evaluate which control is appropriate for their use. 
+  Our simulation trials found that the cvxpy and velocity PID control reached our desired temperatures more efficiently and accurately.
 
 ## Contributions:
 
